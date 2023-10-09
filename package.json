@@ -1,60 +1,24 @@
 {
-  "name": "html5-boilerplate",
-  "version": "8.0.0",
-  "homepage": "https://html5boilerplate.com/",
-  "license": "MIT",
-  "description": "A professional front-end template for building fast, robust, and adaptable web apps or sites.",
+  "name": " ",
+  "version": "0.0.1",
+  "description": "",
+  "private": true,
   "keywords": [
-    "h5bp",
-    "template",
-    "front-end"
+    ""
   ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/h5bp/html5-boilerplate.git"
-  },
-  "bugs": {
-    "url": "https://github.com/h5bp/html5-boilerplate/issues"
-  },
+  "license": "",
+  "author": "",
   "scripts": {
-    "build": "gulp build",
-    "prettier": "prettier --write ./**/*.{js,json,md,mjs,yml}",
-    "test": "gulp archive && mocha --reporter spec --timeout 5000"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack serve --open --config webpack.config.dev.js",
+    "build": "webpack --config webpack.config.prod.js"
   },
   "devDependencies": {
-    "archiver": "^6.0.1",
-    "del": "^7.1.0",
-    "eslint": "^8.50.0",
-    "eslint-config-recommended": "^4.1.0",
-    "eslint-plugin-mocha": "^10.2.0",
-    "glob": "^10.3.10",
-    "gulp": "^4.0.2",
-    "gulp-autoprefixer": "^8.0.0",
-    "gulp-eslint": "^6.0.0",
-    "gulp-header": "^2.0.9",
-    "gulp-rename": "^2.0.0",
-    "main.css": "3.0.0",
-    "mocha": "^10.2.0",
-    "prettier": "3.0.3",
-    "strip-json-comments": "^5.0.1"
-  },
-  "engines": {
-    "node": ">=16",
-    "npm": ">=8"
-  },
-  "h5bp-configs": {
-    "directories": {
-      "archive": "archive",
-      "dist": "dist",
-      "src": "src",
-      "test": "test"
-    }
-  },
-  "files": [
-    "CHANGELOG.md",
-    "LICENSE.txt",
-    "package.json",
-    "dist/",
-    "README.md"
-  ]
+    "copy-webpack-plugin": "^11.0.0",
+    "html-webpack-plugin": "^5.5.3",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1",
+    "webpack-merge": "^5.9.0"
+  }
 }
