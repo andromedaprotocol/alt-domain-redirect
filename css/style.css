@@ -40,9 +40,19 @@ body {
   color: white;
 }
 
+.box {
+  backdrop-filter: blur(6px);
+  border: 5px solid transparent;
+  border-image: linear-gradient(to bottom right, #ffbb0a 0%, #f4143c 50%, #3e7bed 100%);
+  border-image-slice: 1;
+  padding: 40px;
+  width: 900px;
+}
+
 img {
-  width:600px;
-  margin-bottom:100px;
+  width:400px;
+  margin-bottom:50px;
+  margin-left:50px;
 }
 
 h1 {
@@ -57,7 +67,6 @@ h4 {
 p {
   font-size: 200%;
   color: white;
-  width: 900px;
 }
 
 p a {
